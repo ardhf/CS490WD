@@ -1,1 +1,47 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alexander Robinson - Portfolio</title> <!-- Title of website (words on the tab) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"> <!-- gotten from https://getbootstrap.com/docs/5.1/getting-started/download/ -->
+	<link rel="stylesheet" href="style.css"> <!-- My custom css -->
+</head>
+<body>
+        <div class="container"> <!-- default class from the bootstrap lib -->
+            <h2 class="heading-text">Biography</h2> <!-- heading text for the section heading -->
+            <div class="my-row">  <!-- custom class to put items in a row -->
+				<img src="ProfessionalPicture.png" class="my-image"> <!-- Making my image with a custom class to resize it and give it roudned corners -->
+					<div class="bio-text"> <!-- Custom class for bio text -->
+                    <p>Welcome to my portfolio website. I am a student at UMKC in my final year. I have always enjoyed programming since I've picked it up and have done many side projects. One notable project includes using an Arduino to control an LED through a website using PHP and MySQL.</p>
+                    <p>Throughout my many years of school, I have become proficient in C/C++, Pyhton, and Java. My side projects have helped me learn the basics of HTML, CSS, and Javascript although I feel that I can still improve.</p>
+				</div>
+			</div>
+        </div>
+
+        <div class="container">
+            <h2 class="heading-text">Resume</h2> <!-- Custom class for headings -->
+            <p>You can view or download my full resume as a PDF here:</p>
+            <a href="Robinson-Resume.pdf" class="btn btn-primary">Download Resume as PDF</a> <!-- Classes from bootstrap, Download from https://www.w3schools.com/howto/howto_html_download_link.asp -->
+        </div>
+
+        <div class="container">
+            <h2 class="heading-text">Education Background</h2>
+            <div>
+                <h4>B.S. Computer Science</h4> <!-- subheading for degree and school -->
+                <p>University of Missouri-Kansas City | 2024</p>
+                <p>I have completed my A.S. Computer Science degree at Northern Virginia Community College. I then transferred to UMKC in order to obtain my B.S. in Computer Science. I plan to finish my degree in December of 2024.
+				   After that I plan to start Graduate school at UMKC to get my M.S. in Computer Science.</p>
+            </div>
+            <h4>Relevant Courses</h4>  <!--  another subheading for coursework -->
+            <ul class="list-group"> <!-- class from bootstrap gotten from https://www.w3schools.com/bootstrap/bootstrap_list_groups.asp -->
+                <li class="list-group-item"><b>Java Programming and Applications:</b> This course focused on teaching the basics of Java while also teaching implementations in real-world scenarios.</li>
+                <li class="list-group-item"><b>Intro to Operating Systems:</b> This course focused on the hardware of modern electronics. This course extended beyond computers and allowed me to understand how all electronics work.</li>
+                <li class="list-group-item"><b>Foundations of Software Engineering:</b> This course taught the basics of the software engineering workflow. This includes many different project management methods and an in-depth project where I applied the principles learned in class.</li>
+                <li class="list-group-item"><b>Data Structures:</b> This course provided a strong foundation for understanding how data is stored and allowed me to know when and where to use certain data structures over others.</li>
+            </ul> <!-- Used grammarly for spell-checking -->
+        </div>
+		
+		<br> <br> <br> <!-- adding breaks to make the page have some whitespace at the end -->
+
+</body>
+</html>
