@@ -1,1 +1,21 @@
+/* Custom class for my professional image */
+.my-image {
+	width:300px;
+	height: 300px;
+	border-radius: 25%;
+}
 
+/* Gotten from https://www.geeksforgeeks.org/how-to-make-div-elements-display-inline-using-css/ */
+.my-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.bio-text {
+	padding: 80px 0 80px 20px; /* Top Right Bottom Left */
+}
+
+/* custom class to add padding above and below the headings */
+.heading-text {
+	padding: 20px 0;
+}
