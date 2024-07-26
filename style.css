@@ -23,7 +23,7 @@
 /* displays all of the skills in a grid-like format */
 .skills-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* allows the  grid pieces to be side by side and take up as much space as the body*/
+	grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); /* allows the  grid pieces to be side by side and take up as much space as the body*/
 	gap: 20px;
 	margin-top: 15px;
 }
