@@ -19,3 +19,45 @@
 .heading-text {
 	padding: 20px 0;
 }
+
+/* displays all of the skills in a grid-like format */
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* allows the  grid pieces to be side by side and take up as much space as the body*/
+	gap: 20px;
+	margin-top: 15px;
+}
+
+/* This is all of the individual grid piece properties */
+.skill-category {
+	background-color: #f8f9fa;
+	border-radius: 5px;
+	padding: 15px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* This is for the heading in the skills tab */
+.skill-category h3 {
+	margin-top: 0;
+	color: #3498db;
+	font-size: 1.1em;
+}
+
+/* This is for each skill in each section and  makes them not have bullet points*/
+.skill-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* This applies to each list element in the skill list and gives them a little more space under each element*/
+.skill-list li {
+	margin-bottom: 5px;
+}
+
+/* For formatting the contact section really nice*/
+.contact-info {
+	background-color: #f2f2f2;
+	padding: 15px;
+	border-radius: 5px;
+}
