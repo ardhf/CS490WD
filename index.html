@@ -7,7 +7,40 @@
 	<link rel="stylesheet" href="style.css"> <!-- My custom css -->
 </head>
 <body>
-        <div class="container"> <!-- default class from the bootstrap lib -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alexander Robinson</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biography">Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#work-experience">Work Experience</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#contact-info">Contact Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="container" id="biography"> <!-- default class from the bootstrap lib -->
             <h2 class="heading-text">Biography</h2> <!-- heading text for the section heading -->
             <div class="my-row">  <!-- custom class to put items in a row -->
 				<img src="ProfessionalPicture.png" class="my-image"> <!-- Making my image with a custom class to resize it and give it roudned corners -->
@@ -18,13 +51,13 @@
 			</div>
         </div>
 
-        <div class="container">
+        <div class="container" id="resume">
             <h2 class="heading-text">Resume</h2> <!-- Custom class for headings -->
             <p>You can view or download my full resume as a PDF here:</p>
-            <a href="Robinson-Resume.pdf" class="btn btn-primary">Download Resume as PDF</a> <!-- Classes from bootstrap, Download from https://www.w3schools.com/howto/howto_html_download_link.asp -->
+            <a href="Alexander_Robinson_Resume.pdf" class="btn btn-primary">Download Resume as PDF</a> <!-- Classes from bootstrap, Download from https://www.w3schools.com/howto/howto_html_download_link.asp -->
         </div>
 
-        <div class="container">
+        <div class="container" id="education">
             <h2 class="heading-text">Education Background</h2>
             <div>
                 <h4>B.S. Computer Science</h4> <!-- subheading for degree and school -->
@@ -40,6 +73,83 @@
                 <li class="list-group-item"><b>Data Structures:</b> This course provided a strong foundation for understanding how data is stored and allowed me to know when and where to use certain data structures over others.</li>
             </ul> <!-- Used grammarly for spell-checking -->
         </div>
+		
+		<div class="container" id="skills"> <!-- default class from the bootstrap lib -->
+				<h2 class="heading-text">Skills</h2> <!-- Custom class for headings -->
+				<div class="skills-grid">
+					<div class="skill-category"> <!-- Custom class for creating the card -->
+						<h3>Programming Languages</h3><!-- This is all the stuff for the first card -->
+						<ul class="skill-list">
+							<li>C++</li> <!-- all of the items on the card -->
+							<li>Python</li>
+							<li>Java</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>PHP</li>
+						</ul>
+					</div>
+					<div class="skill-category">
+						<h3>Technical Skills</h3><!-- This is all the stuff for the second card -->
+						<ul class="skill-list">
+							<li>Web Application Development</li> <!-- all of the items on the card -->
+							<li>Tableau Dashboard Development</li>
+							<li>DevSecOps and DevOps Lifecycles</li>
+						</ul>
+					</div>
+					<div class="skill-category">
+						<h3>Management & Organizational Skills</h3><!-- This is all the stuff for the third card -->
+						<ul class="skill-list">
+							<li>IT Project Management</li> <!-- all of the items on the card -->
+							<li>Organization and Time Management</li>
+						</ul>
+					</div>
+				</div>
+        </div>
+		
+		<div class="container" id="projects"> <!-- default class from the bootstrap lib -->
+			<h2 class="heading-text">Projects</h2>
+			<ul> <!-- Making a list with each item being a different project and have its own header-->
+				<li>
+					<h3>LED Message Board</h3>
+					<p>Developed an Internet of Things (IoT) project utilizing ESP32 microcontrollers to manage two 8x32 LED matrix displays. The system uses a web app built on PHP with a MySQL database backend. The web interface, designed with HTML forms, maintains real-time control of the LED matrices by updating the database.
+					The ESP32s retrieve and apply the latest settings from the database asynchronously, enabling seamless functions such as message display between boards, time and weather updates, and customizable text color, background color, and brightness settings.</p>
+				</li>
+				<li>
+					<h3>LED Light Controller</h3>
+					<p>Created a program to control LED lights using an ESP32 and three strips of WS2812 LED lights. The ESP32 retrieves the settings from a database, which is managed using PHP along with a MySQL backend.
+					The settings allow for controlling the lights based on sunrise and sunset, setting up custom animations, adjusting brightness, and using an HTML color picker to choose any color.</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="container" id="work-experience"> <!-- ID is needed for all divs to work with the nav bar at the top-->
+			<h2 class="heading-text">Work Experience</h2>
+			<ul> <!-- Making another unordered list-->
+				<li> <!-- Each element under the work experience section has its own heading for the job name and employer, then text for the duties performed-->
+					<h3>Undergraduate Research Assistant - MIDE</h3>
+					<p>Mar 2024 - Present</p>
+					<p><b>Collaborated</b> with developers to provide technical support, ensuring efficient software design, and implementation.</p>
+					<p><b>Explored</b> using new technology to innovate solutions to solve complex problems.</p>
+				</li>
+				<li>
+					<h3>SparkX Innovation Cell Technician - United States Air Force</h3>
+					<p>Oct 2020 – Oct 2021</p>
+					<p><b>Provided</b> technical guidance for 3D printing, Arduino, Raspberry Pi, and programming (C++ and Python) for SparkX projects.</p>
+					<p><b>Performed</b> maintenance and repairs on 3D printers, 3D scanners, laser cutter, and audio/visual equipment.</p>
+					<p><b>Instituted</b> and managed inventory management system for all equipment and materials.</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="container" id="contact-info">
+			<div class="contact-info"> <!-- Custom class for making the contact info card -->
+				<h2 class="heading-text">Contact Information</h2> <!-- Heading for the section as well as clickable text for everything except phone number because you usually wont call on PC-->
+				<p>Email: <a href="mailto:AlexanderShaneRobinson.com">AlexanderShaneRobinson@yahoo.com</a></p>
+				<p>Phone: (779) 707-8898</a></p>
+				<p>LinkedIn: <a href="https://www.linkedin.com/in/alexandershanerobinson/">linkedin.com/in/AlexanderShaneRobinson</a></p>	
+				<p>GitHub: <a href="https://github.com/ardhf">github.com/ardhf</a></p>
+			</div>
+		</div>
 		
 		<br> <br> <br> <!-- adding breaks to make the page have some whitespace at the end -->
 
